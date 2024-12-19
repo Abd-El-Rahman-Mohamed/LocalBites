@@ -14,34 +14,39 @@
     <!-- swipper -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <!-- connect with css -->
-    <link rel="stylesheet" href="CSS/style.css">
-    <title>Mo Restaurant</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="./favicons/favicon.ico">
+    <title>LocalBites Restaurant</title>
 </head>
 <body>
     <header>
         <a href="#" class="logo"><span class="material-symbols-outlined">
             local_dining
             </span>
-            <h4><strong>G</strong>ang</h4>
+            <h4><strong>L</strong>ocal Bites</h4>
         </a>
         <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#dishes">Dishes</a>
-            <a href="#about">About</a>
-            <a href="#menu">Menu</a>
-            <a href="#contact">Contact</a>
-            <a href="#order">Order</a>
+		<ul>
+	            <li><a href="#home" class="active">Home</a></li>
+		    <li><a href="#dishes">Dishes</a></li>
+		    <li><a href="./webpages/aboutus.php">About</a></li>
+		    <li><a href="#menu">Menu</a></li>
+		    <li><a href="./webpages/contactus.php">Contact</a></li>
+		    <li><a href="./webpages/order.php">Order</a></li>
+		</ul>
         </nav>
-        <div class="icons">
-            <i class="fa fa-bars " aria-hidden="true" id="menu-bars"></i>
-            <i class="fa fa-search" aria-hidden="true" id="search"></i>
-            <a href="#" class="fa fa-heart" aria-hidden="true"></a>
-            <a href="#" class="fa fa-shopping-cart" aria-hidden="true"></a>
-        </div>
+	<div class="icons">
+    	    <i class="fa fa-bars " aria-hidden="true" id="menu-bars"></i>
+	    <i class="fa fa-search" aria-hidden="true" id="search"></i>
+	    <a href="#" class="fa fa-heart" aria-hidden="true"></a>
+ 	    <a href="#" class="fa fa-shopping-cart" aria-hidden="true"></a>
+	    <button class="dark-mode-toggle">
+      	    <i class="fa fa-moon" aria-hidden="true"></i> </button>
+	</div>
     </header>
 
-    <form action="" id="search-form">
-        <input type="search" placeholder="Looks for What?...." name="" id="search-box">
+    <form action="index.php" id="search-form">
+        <input type="search" placeholder="Looks for What?...." name="search" id="search-box">
         <label for="search-box" class="fa fa-search"></label>
         <i class="fa fa-times" aria-hidden="true" id="close"></i>
     </form>
@@ -53,56 +58,14 @@
                     <div class="content">
                         <span>our special dish</span>
                         <h3>spicy burger</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Voluptatibus repellendus debitis minima error
-                            maxime incidunt odio repellat laborum culpa fugiat
-                            magni ex vitae reiciendis magnam, in adipisci. Asperiores, soluta aliquid?
-                        </p>
-                        <a href="#" class="btn">Bay Now</a>
+                        <p>An intense and spicy flavor for an explosion of taste. Juicy meat, special sauces, and a touch of chili for an unforgettable experience.</p>
+                        <a href="#" class="btn">Pay Now</a>
                     </div>
                     <div class="images">
-                        <img src="Images/7.png" alt="burger">
+                        <img src="./assets/hero-section-burger.png" alt="burger">
                     </div>
                 </div>
-
-                <!--<div class="swiper-slide slide">
-                    <div class="content">
-                        <span>our special dish</span>
-                        <h3>fruit salad</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Voluptatibus repellendus debitis minima error
-                            maxime incidunt odio repellat laborum culpa fugiat
-                            magni ex vitae reiciendis magnam, in adipisci. Asperiores, soluta aliquid?
-                        </p>
-                        <a href="#" class="btn">Bay Now</a>
-                    </div>
-                    <div class="images">
-                        <img src="Images/3.png" alt="burger">
-                    </div>
-                </div>
-
-                <div class="swiper-slide slide">
-                    <div class="content">
-                        <span>our special dish</span>
-                        <h3>ramen</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Voluptatibus repellendus debitis minima error
-                            maxime incidunt odio repellat laborum culpa fugiat
-                            magni ex vitae reiciendis magnam, in adipisci. Asperiores, soluta aliquid?
-                        </p>
-                        <a href="#" class="btn">Bay Now</a>
-                    </div>
-                    <div class="images">
-                        <img src="Images/6.png" alt="burger">
-                    </div>
-                </div> -->
             </div>
-
-            <!-- <div class="swiper-pagination"></div>
-            
-            
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div> -->
         </div>
     </section>
 
@@ -113,91 +76,55 @@
             <div class="box">
                 <a href="#" class="fa fa-heart" aria-hidden="true"></a>
                 <a href="#" class="fa fa-eye" aria-hidden="true"></a>
-                <img src="Images/4.png" alt="">
-                <h3>testy food</h3>
-                <span>$16.5</span>
+                <img src="./assets/classic-burger.png" alt="Classic hamburger with lettuce, tomato, and onion on a sesame seed bun.">
+                <h3>Burger Delight</h3>
+                <span>$5.99</span>
                 <a href="#" class="btn">Add to Chart</a>
             </div>
             <div class="box">
                 <a href="#" class="fa fa-heart" aria-hidden="true"></a>
                 <a href="#" class="fa fa-eye" aria-hidden="true"></a>
-                <img src="Images/2.png" alt="">
-                <h3>testy food</h3>
-                <span>$16.5</span>
+                <img src="./assets/chicken-burger.png" alt="Crispy chicken burger with lettuce, tomato, onion, and cheese on a sesame seed bun.">
+                <h3>Crispy Chicken Burger</h3>
+                <span>$5.99</span>
                 <a href="#" class="btn">Add to Chart</a>
             </div>
             <div class="box">
                 <a href="#" class="fa fa-heart" aria-hidden="true"></a>
                 <a href="#" class="fa fa-eye" aria-hidden="true"></a>
-                <img src="Images/3.png" alt="">
-                <h3>testy food</h3>
-                <span>$16.5</span>
+                <img src="./assets/two-pieces-chicken.png" alt="Two pieces of crispy fried chicken.">
+		<h3>2Pcs Crispy Wings</h3>
+                <span>$5.99</span>
                 <a href="#" class="btn">Add to Chart</a>
             </div>
             <div class="box">
                 <a href="#" class="fa fa-heart" aria-hidden="true"></a>
                 <a href="#" class="fa fa-eye" aria-hidden="true"></a>
-                <img src="Images/1.png" alt="">
-                <h3>testy food</h3>
-                <span>$16.5</span>
+                <img src="./assets/vegitable-taco.png" alt="Taco with lettuce, cheese, and tomato in a crispy shell.">
+                <h3>Vegitable Taco</h3>
+		<span>$1.99</span>
                 <a href="#" class="btn">Add to Chart</a>
             </div>
             <div class="box">
                 <a href="#" class="fa fa-heart" aria-hidden="true"></a>
                 <a href="#" class="fa fa-eye" aria-hidden="true"></a>
-                <img src="Images/5.png" alt="">
-                <h3>testy food</h3>
-                <span>$16.5</span>
+                <img src="./assets/fries-with-dressing.png" alt="French fries topped with chili and shredded cheese.">
+                <h3>Chili Cheese Fries</h3>
+                <span>$3.99</span>
                 <a href="#" class="btn">Add to Chart</a>
             </div>
             <div class="box">
                 <a href="#" class="fa fa-heart" aria-hidden="true"></a>
                 <a href="#" class="fa fa-eye" aria-hidden="true"></a>
-                <img src="Images/6.png" alt="">
-                <h3>testy food</h3>
-                <span>$16.5</span>
+                <img src="./assets/fries.png" alt="French fries in a white paper bag.">
+                <h3>Golden Fries</h3>
+                <span>$2.99</span>
                 <a href="#" class="btn">Add to Chart</a>
             </div>
         </div>
 
     </section>
     
-    <section class="about" id="about">
-        <h3 class="sub-heading">about us</h3>
-        <h1 class="heading">why choose us?</h1>
-        <div class="row">
-            <div class="image">
-                <video controls autoplay muted>
-                    <source src="Images/v.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-            <div class="content">
-                <h3>Best food In the country</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi eveniet eum libero facere ratione rerum minima aut reprehenderit nostrum iure. Fugiat amet beatae sed ipsam ad illo! Dolore, sapiente aperiam.
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus vitae sapiente tenetur expedita saepe, suscipit,
-                    quas doloribus rerum impedit facere sit aspernatur fugit hic optio ut. Blanditiis est officia nam?
-                </p>
-                
-                <div class="icon-container">
-                    <div class="icon">
-                        <i class="fa fa-shipping-fast " aria-hidden="true" id="menu-bars"></i>
-                        <span>free delivery</span>
-                    </div>
-                    <div class="icon">
-                        <i class="fa fa-dollar-sign " aria-hidden="true" id="menu-bars"></i>
-                        <span>easy payment</span>
-                    </div>
-                    <div class="icon">
-                        <i class="fa fa-headset " aria-hidden="true" id="menu-bars"></i>
-                        <span>24/7 services</span>
-                    </div>
-                </div>
-                <a href="#" class="btn-about">learn more</a>
-            </div>
-        </div>
-    </section>
-
     <section class="menu" id="menu">
         <h3 class="sub-heading">our menu</h3>
         <h1 class="heading">Today's specialty</h1>
@@ -205,174 +132,93 @@
             <div class="box">
                 
                 <div class="images">
-                    <img src="Images/8.jpg" alt="">
+                    <img src="./assets/chocolate-indulgence.jpg" alt="Two slices of layered chocolate cake with chocolate mousse and a cherry glaze.">
                     <a class="fa fa-heart love" aria-hidden="true"></a>
                 </div>
                 <div class="content">
-                    <h3>testy food</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quibusdam dolorem ducimus, in sit officia numquam eligendi nihil iure? Aliquid facilis beatae ut sit ipsam, alias nemo odio sed. Dicta?</p>
+                    <h3>Chocolate Indulgence</h3>
+                    <p>A decadent slice of chocolate cake, rich with layers of moist chocolate sponge and smooth, creamy frosting. Drizzled with a luscious berry glaze, this dessert is an irresistible indulgence for any chocolate lover.</p>
                     <a href="#" class="btn-menu" id="btn-menu">Add to Chart</a>
-                    <span>$16.5</span>
+                    <span>$6.99</span>
                 </div>
             </div>
             <div class="box">
                 <div class="images">
-                    <img src="Images/9.jpg" alt="">
+                    <img src="./assets/buttery-pancake.jpg" alt="A stack of pancakes topped with caramel sauce, strawberries, nuts, and a sprig of mint, served with a side of whipped cream.">
                     <a class="fa fa-heart love" aria-hidden="true"></a>
                 </div>
                 <div class="content">
-                    <h3>testy food</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quibusdam dolorem ducimus, in sit officia
-                        numquam eligendi nihil iure? Aliquid facilis beatae ut sit ipsam, alias nemo odio sed. Dicta?</p>
-                    <a href="#" class="btn-menu" id="btn-menu">Add to Chart</a>                    <span>$16.5</span>
+                    <h3>Buttery Pancake</h3>
+                    <p>A towering stack of fluffy pancakes, drizzled with warm caramel sauce and topped with fresh strawberries, walnuts, and a dollop of whipped cream. A breakfast masterpiece!</p>
+                    <a href="#" class="btn-menu" id="btn-menu">Add to Chart</a>                    
+		    <span>$12.99</span>
                 </div>
             </div>
             <div class="box">
                 <div class="images">
-                    <img src="Images/10.jpg" alt="">
+                    <img src="./assets/salmon-sensation.jpg" alt="Grilled salmon steak served on a bed of greens with avocado, cherry tomatoes, lemon wedge, and a balsamic glaze.">
                     <a class="fa fa-heart love" aria-hidden="true"></a>
                 </div>
                 <div class="content">
-                    <h3>testy food</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quibusdam dolorem ducimus, in sit officia
-                        numquam eligendi nihil iure? Aliquid facilis beatae ut sit ipsam, alias nemo odio sed. Dicta?</p>
+                    <h3>Salmon Sensation</h3>
+                    <p>Savor the delicate flavors of our pan-seared salmon, expertly seasoned and served atop a bed of fresh greens. Accompanied by ripe avocado slices, cherry tomatoes, and a drizzle of balsamic glaze, this dish is a symphony of textures and tastes.</p>
                     <a href="#" class="btn-menu" id="btn-menu">Add to Chart</a>
-                    <span>$16.5</span>
+                    <span>$24.99</span>
                 </div>
             </div>
             <div class="box">
                 <div class="images">
-                    <img src="Images/12.jpg" alt="">
+                    <img src="./assets/veggie-fiesta.jpg" alt="A colorful bowl of quinoa salad with roasted vegetables including broccoli, carrots, zucchini, and peppers, surrounded by fresh ingredients like tomatoes, Brussels sprouts, and ginger.">
                     <a class="fa fa-heart love" aria-hidden="true"></a>
                 </div>
                 <div class="content">
-                    <h3>testy food</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quibusdam dolorem ducimus, in sit officia
-                        numquam eligendi nihil iure? Aliquid facilis beatae ut sit ipsam, alias nemo odio sed. Dicta?</p>
+                    <h3>Veggie Fiesta</h3>
+                    <p>A vibrant and flavorful bowl bursting with the freshest seasonal vegetables. Enjoy a medley of roasted broccoli, carrots, bell peppers, and Brussels sprouts, all nestled atop a bed of quinoa. A wholesome and satisfying meal that celebrates the bounty of the harvest.</p>
                     <a href="#" class="btn-menu" id="btn-menu">Add to Chart</a>
-                    <span>$16.5</span>
+                    <span>$14.99</span>
                 </div>
             </div>
             <div class="box">
                 <div class="images">
-                    <img src="Images/16.jpg" alt="">
+                    <img src="./assets/steak-and-sides.jpg" alt="Sliced medium-rare steak with peppercorn sauce, served with steamed vegetables including broccoli, cauliflower, carrots, and green beans, and a side of mashed potatoes.">
                     <a class="fa fa-heart love" aria-hidden="true"></a>
                 </div>
                 <div class="content">
-                    <h3>testy food</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quibusdam dolorem ducimus, in sit officia
-                        numquam eligendi nihil iure? Aliquid facilis beatae ut sit ipsam, alias nemo odio sed. Dicta?</p>
+                    <h3>Steak & Sides</h3>
+                    <p>Indulge in a classic steak dinner with our perfectly cooked steak, sliced and served alongside a medley of seasonal vegetables, creamy mashed potatoes, and a rich peppercorn sauce. A hearty and satisfying meal for any occasion.</p>
                     <a href="#" class="btn-menu" id="btn-menu">Add to Chart</a>
-                    <span>$16.5</span>
+                    <span>$29.99</span>
                 </div>
             </div>
             <div class="box">
                 <div class="images">
-                    <img src="Images/15.jpg" alt="">
+                    <img src="./assets/classic-combo.jpg" alt="A hamburger with bacon, lettuce, and special sauce, served with french fries and dipping sauces.">
                     <a class="fa fa-heart love" aria-hidden="true"></a>
                 </div>
                 <div class="content">
-                    <h3>testy food</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quibusdam dolorem ducimus, in sit officia
-                        numquam eligendi nihil iure? Aliquid facilis beatae ut sit ipsam, alias nemo odio sed. Dicta?</p>
+                    <h3>Classic Combo</h3>
+                    <p>Savor the quintessential American classic: a juicy burger piled high with crisp lettuce, ripe tomato, and savory bacon, all nestled in a toasted bun. Served alongside a generous portion of crispy golden fries and your choice of dipping sauce.</p>
                     <a href="#" class="btn-menu" id="btn-menu">Add to Chart</a>
-                    <span>$16.5</span>
+                    <span>$14.99</span>
                 </div>
             </div>
         </div>
-    </section>
-
-    <section class="contact" id="contact">
-        <h3 class="sub-heading">Contact Us</h3>
-        <h1 class="heading">How Could you Contact Us</h1>
-        <div class="content">
-            <div class="contact-card">
-                <div class="icon">
-                    <i class="fa-solid fa-phone"></i>
-                </div>
-                <div class="contact-info">
-                    <strong>
-                        Phone
-                        <br>
-                        <span>+20123456789</span>
-                    </strong>
-                </div>
-            </div>
-            <div class="contact-card">
-                <div class="icon">
-                    <i class="fa-solid fa-envelope"></i>
-                </div>
-                <div class="contact-info">
-                    <strong>
-                        Email
-                        <br>
-                        <span>gang@gmail.com</span>
-                    </strong>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="order" id="order">
-        <h3 class="sub-heading">order now</h3>
-        <h1 class="heading">free and fast</h1>
-        <form action="">
-            <div class="inputBox">
-                <div class="input">
-                    <span>Your Name</span>
-                    <input type="text" placeholder="enter your name">
-                </div>
-                <div class="input">
-                    <span>Your Number</span>
-                    <input type="number" placeholder="enter your number">
-                </div>
-                <div class="input">
-                    <span>Your order</span>
-                    <input type="text" placeholder="enter food name">
-                </div>
-                <div class="input">
-                    <span>additional food</span>
-                    <input type="text" placeholder="extra with food">
-                </div>
-                <div class="input">
-                    <span>how much</span>
-                    <input type="number" placeholder="how many orders?">
-                </div>
-                <div class="input">
-                    <span>date and time</span>
-                    <input type="datetime-local" >
-                </div>
-                <div class="input">
-                    <span>your address</span>
-                    <textarea name="" id="" placeholder="enter your address" cols="30" rows="10"></textarea>
-                </div>
-                <div class="input">
-                    <span>your messege</span>
-                    <textarea name="" id="" placeholder="enter your messege" cols="30" rows="10"></textarea>
-                </div>
-            </div>
-            <input type="submit" value="orde now" class="form-btn">
-        </form>
-
     </section>
 
     <footer class="footer">
-        <p>Copyrights &copy;<span>GangRestaurantTeam</span></p>
+        <p>Copyrights &copy; <span>LocalBitesRestaurantTeam</span></p>
         <div class="social-icon">
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+	    <a href="https://www.facebook.com/profile.php?id=61570569577879"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://x.com/localbitesfb"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/localbitesrestaurant/"><i class="fa-brands fa-instagram"></i></a>
         </div>
     </footer>
 
 
-    
-
-
-    <!-- Swiper.js JS -->
+    <!-- Swiper.js js -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="JS/main.js"></script>
-    
+    <script src="js/main.js"></script>
+    <script src="js/dark-mode.js"></script> 
     
 </body>
 </html>
