@@ -27,12 +27,12 @@
         </a>
         <nav class="navbar">
 		<ul>
-	            <li><a href="../index.html#home" >Home</a></li>
+	            <li><a href="../index.html#home">Home</a></li>
 		    <li><a href="../index.html#dishes">Dishes</a></li>
-		    <li><a href="#about" class="active">About</a></li>
+		    <li><a href="./aboutus.php#about">About</a></li>
 		    <li><a href="../index.html#menu">Menu</a></li>
 		    <li><a href="./contactus.php#contact">Contact</a></li>
-		    <li><a href="./order.php#order">Order</a></li>
+		    <li><a href="#order" class="active">Order</a></li>
 		</ul>
         </nav>
 	<div class="icons">
@@ -51,37 +51,47 @@
         <i class="fa fa-times" aria-hidden="true" id="close"></i>
     </form>
 
-    <section class="about" id="about">
-        <h3 class="sub-heading">about us</h3>
-        <h1 class="heading">why choose us?</h1>
-        <div class="row">
-            <div class="image">
-                <video controls autoplay muted loop>
-                    <source src="../assets/why-to-choose-us.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-            <div class="content">
-                <h3>Best food In the country</h3>
-                <p>Welcome to LocalBites, where we're passionate about serving delicious, locally-sourced food in a warm and inviting atmosphere. We believe in using fresh, high-quality ingredients to create memorable dining experiences. Join us and taste the difference!</p>
-                
-                <div class="icon-container">
-                    <div class="icon">
-                        <i class="fa fa-shipping-fast " aria-hidden="true" id="menu-bars"></i>
-                        <span>free delivery</span>
-                    </div>
-                    <div class="icon">
-                        <i class="fa fa-dollar-sign " aria-hidden="true" id="menu-bars"></i>
-                        <span>easy payment</span>
-                    </div>
-                    <div class="icon">
-                        <i class="fa fa-headset " aria-hidden="true" id="menu-bars"></i>
-                        <span>24/7 services</span>
-                    </div>
+    <section class="order" id="order">
+        <h3 class="sub-heading">order now</h3>
+        <h1 class="heading">free and fast</h1>
+        <form action="">
+            <div class="inputBox">
+                <div class="input">
+                    <span>Your Name</span>
+                    <input name="name" id="name" type="text" placeholder="enter your name">
                 </div>
-                <a href="#" class="btn-about">learn more</a>
+                <div class="input">
+                    <span>Your Number</span>
+                    <input name="number" id="number" type="number" placeholder="enter your number">
+                </div>
+                <div class="input">
+                    <span>Your order</span>
+                    <input name="order" id="order" type="text" placeholder="enter food name">
+                </div>
+                <div class="input">
+                    <span>additional food</span>
+                    <input name="additionalfood" id="additionalfood" type="text" placeholder="extra with food">
+                </div>
+                <div class="input">
+                    <span>how much</span>
+                    <input name="numberoforders" id="numberoforders" type="number" placeholder="how many orders?">
+                </div>
+                <div class="input">
+                    <span>date and time</span>
+                    <input name="datetime" id="datetime" type="datetime-local" >
+                </div>
+                <div class="input">
+                    <span>your address</span>
+                    <textarea name="address" id="address" placeholder="enter your address" cols="30" rows="10"></textarea>
+                </div>
+                <div class="input">
+                    <span>your messege</span>
+                    <textarea name="message" id="message" placeholder="enter your messege" cols="30" rows="10"></textarea>
+                </div>
             </div>
-        </div>
+            <input type="submit" value="order now" class="form-btn">
+        </form>
+
     </section>
 
     <footer class="footer">
@@ -96,6 +106,7 @@
 
     <!-- Swiper.js js -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
     <script src="../js/main.js"></script>
     <script src="../js/dark-mode.js"></script> 
     

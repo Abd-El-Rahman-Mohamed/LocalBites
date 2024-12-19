@@ -27,11 +27,11 @@
         </a>
         <nav class="navbar">
 		<ul>
-	            <li><a href="../index.html#home" >Home</a></li>
+	            <li><a href="../index.html#home">Home</a></li>
 		    <li><a href="../index.html#dishes">Dishes</a></li>
-		    <li><a href="#about" class="active">About</a></li>
+		    <li><a href="./aboutus.php#about">About</a></li>
 		    <li><a href="../index.html#menu">Menu</a></li>
-		    <li><a href="./contactus.php#contact">Contact</a></li>
+		    <li><a href="#contact" class="active">Contact</a></li>
 		    <li><a href="./order.php#order">Order</a></li>
 		</ul>
         </nav>
@@ -51,35 +51,33 @@
         <i class="fa fa-times" aria-hidden="true" id="close"></i>
     </form>
 
-    <section class="about" id="about">
-        <h3 class="sub-heading">about us</h3>
-        <h1 class="heading">why choose us?</h1>
-        <div class="row">
-            <div class="image">
-                <video controls autoplay muted loop>
-                    <source src="../assets/why-to-choose-us.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-            <div class="content">
-                <h3>Best food In the country</h3>
-                <p>Welcome to LocalBites, where we're passionate about serving delicious, locally-sourced food in a warm and inviting atmosphere. We believe in using fresh, high-quality ingredients to create memorable dining experiences. Join us and taste the difference!</p>
-                
-                <div class="icon-container">
-                    <div class="icon">
-                        <i class="fa fa-shipping-fast " aria-hidden="true" id="menu-bars"></i>
-                        <span>free delivery</span>
-                    </div>
-                    <div class="icon">
-                        <i class="fa fa-dollar-sign " aria-hidden="true" id="menu-bars"></i>
-                        <span>easy payment</span>
-                    </div>
-                    <div class="icon">
-                        <i class="fa fa-headset " aria-hidden="true" id="menu-bars"></i>
-                        <span>24/7 services</span>
-                    </div>
+    <section class="contact" id="contact">
+        <h3 class="sub-heading">Contact Us</h3>
+        <h1 class="heading">How Could you Contact Us</h1>
+        <div class="content">
+            <div class="contact-card">
+                <div class="icon">
+                    <i class="fa-solid fa-phone"></i>
                 </div>
-                <a href="#" class="btn-about">learn more</a>
+                <div class="contact-info">
+                    <strong>
+                        Phone
+                        <br>
+                        <span>+1(225)254-2523</span>
+                    </strong>
+                </div>
+            </div>
+            <div class="contact-card">
+                <div class="icon">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="contact-info">
+                    <strong>
+                        Email
+                        <br>
+			<span>localbites@proton.me</span>
+                    </strong>
+                </div>
             </div>
         </div>
     </section>
